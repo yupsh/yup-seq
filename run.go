@@ -72,9 +72,17 @@ func newCommand(version string, stdout io.Writer) *cli.Command {
 		// os.Exit, so the exit code stays testable.
 		ExitErrHandler: func(context.Context, *cli.Command, error) {},
 		Flags: []cli.Flag{
-			&cli.StringFlag{Name: flagSeparator, Aliases: []string{"s"}, Usage: "use STRING to separate numbers (default: \\n)"},
+			&cli.StringFlag{
+				Name:    flagSeparator,
+				Aliases: []string{"s"},
+				Usage:   "use STRING to separate numbers (default: \\n)",
+			},
 			&cli.StringFlag{Name: flagFormat, Aliases: []string{"f"}, Usage: "use printf style floating-point FORMAT"},
-			&cli.BoolFlag{Name: flagEqualWidth, Aliases: []string{"w"}, Usage: "equalize width by padding with leading zeroes"},
+			&cli.BoolFlag{
+				Name:    flagEqualWidth,
+				Aliases: []string{"w"},
+				Usage:   "equalize width by padding with leading zeroes",
+			},
 		},
 		Action: action(stdout),
 	}
