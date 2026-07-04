@@ -1,23 +1,9 @@
-# yup-seq
+[![actions](https://github.com/yupsh/yup-seq/actions/workflows/actions.yml/badge.svg)](https://github.com/yupsh/yup-seq/actions/workflows/actions.yml)
+[![ci](https://github.com/yupsh/yup-seq/actions/workflows/ci.yml/badge.svg)](https://github.com/yupsh/yup-seq/actions/workflows/ci.yml)
+[![dockerfiles](https://github.com/yupsh/yup-seq/actions/workflows/dockerfiles.yml/badge.svg)](https://github.com/yupsh/yup-seq/actions/workflows/dockerfiles.yml)
+[![docs](https://github.com/yupsh/yup-seq/actions/workflows/docs.yml/badge.svg)](https://github.com/yupsh/yup-seq/actions/workflows/docs.yml)
+[![go](https://github.com/yupsh/yup-seq/actions/workflows/go.yml/badge.svg)](https://github.com/yupsh/yup-seq/actions/workflows/go.yml)
+[![release](https://github.com/yupsh/yup-seq/actions/workflows/release.yml/badge.svg)](https://github.com/yupsh/yup-seq/actions/workflows/release.yml)
+[![shell](https://github.com/yupsh/yup-seq/actions/workflows/shell.yml/badge.svg)](https://github.com/yupsh/yup-seq/actions/workflows/shell.yml)
 
-```
-NAME:
-   seq - print a sequence of numbers
-
-USAGE:
-   seq [OPTIONS] LAST
-   seq [OPTIONS] FIRST LAST
-   seq [OPTIONS] FIRST INCREMENT LAST
-
-   print numbers from FIRST to LAST, in steps of INCREMENT.
-
-VERSION:
-   dev
-
-GLOBAL OPTIONS:
-   --separator string, -s string  use STRING to separate numbers (default: \n)
-   --format string, -f string     use printf style floating-point FORMAT
-   --equal-width, -w              equalize width by padding with leading zeroes
-   --help, -h                     show help
-   --version                      print version information and exit
-```
+[docs](https://yupsh.github.io/docs.repl/)
