@@ -61,12 +61,21 @@ func flags() []urf.Flag {
 			Name:    flagSeparator,
 			Aliases: []string{"s"},
 			Usage:   "use STRING to separate numbers (default: \\n)",
+			Sources: urf.EnvVars("YUP_SEQ_SEPARATOR"),
+			Value:   "",
 		},
-		&urf.StringFlag{Name: flagFormat, Aliases: []string{"f"}, Usage: "use printf style floating-point FORMAT"},
+		&urf.StringFlag{
+			Name:    flagFormat,
+			Aliases: []string{"f"},
+			Usage:   "use printf style floating-point FORMAT",
+			Sources: urf.EnvVars("YUP_SEQ_FORMAT"),
+			Value:   "",
+		},
 		&urf.BoolFlag{
 			Name:    flagEqualWidth,
 			Aliases: []string{"w"},
 			Usage:   "equalize width by padding with leading zeroes",
+			Sources: urf.EnvVars("YUP_SEQ_EQUAL_WIDTH"),
 		},
 	}
 }
